@@ -1,0 +1,4 @@
+<mat-toolbar color="primary">
+    <a mat-icon-button routerLink="home" ><mat-icon>home</mat-icon></a>
+    <a class="nav" routerLink="album-list" [class.active]="isActive" (click)="isActive = !isActive"> Lista degli album<mat-icon>headphones</mat-icon></a>
+</mat-toolbar> 

@@ -1,0 +1,13 @@
+<div class="content" >
+    <div fxLayout="row wrap" fxLayoutGap="10px">
+        <div fxFlex="23%" *ngFor="let p of photos">
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>{{p.title}}</mat-card-title>
+                </mat-card-header>
+                <a [href]="p.url" target="_blank" ><img mat-card-image [src]="p.thumbnailUrl" [alt]="p.title"></a> 
+            </mat-card>
+        </div>
+    </div>
+</div>
+
